@@ -19,8 +19,7 @@ const navigate = useNavigate();
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzhiZjBmNzQ0MThkOGYzNzE1ZDM3Njk5YWRmYTAzNSIsIm5iZiI6MTc1MDI3MjAxOC45OTUwMDAxLCJzdWIiOiI2ODUzMDgxMmY0NGQyYzM3Yjk3M2RlZjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-sbS_YKOxfUmVWwgKISvWE5QSHX5Ad1VBytCJfXNVuY",
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_KEY}`,
     },
   };
 
